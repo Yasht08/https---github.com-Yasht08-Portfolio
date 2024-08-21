@@ -4,13 +4,25 @@ let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
 document.addEventListener("DOMContentLoaded", function() {
+    // Handle form submission
     const form = document.querySelector("form");
     form.addEventListener("submit", function(event) {
         event.preventDefault();
         alert("Message sent!");
     });
-});
 
+    // Handle resume download
+    const resumeButton = document.querySelector('.btn[href$="Resume"]');
+    resumeButton.addEventListener('click', function(event) {
+        const resumePath = "path/to/Yash-Tolani-Resume.pdf";  // Update with the correct path
+        const a = document.createElement('a');
+        a.href = resumePath;
+        a.download = "Yash-Tolani-Resume.pdf";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    });
+});
 
 window.onscroll = () => {
     sections.forEach(sec => {
