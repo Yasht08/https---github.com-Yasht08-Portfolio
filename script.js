@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Handle resume download
     const resumeButton = document.querySelector('.btn[href$="Resume"]');
     resumeButton.addEventListener('click', function(event) {
-        const resumePath = "path/to/Yash-Tolani-Resume.pdf";  // Update with the correct path
+        const resumePath = "Resume_.pdf";  // Update with the correct path
         const a = document.createElement('a');
         a.href = resumePath;
         a.download = "Yash-Tolani-Resume.pdf";
