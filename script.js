@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const resumePath = "Resume_.pdf";  // Update with the correct path
         const a = document.createElement('a');
         a.href = resumePath;
-        a.download = "Yash-Tolani-Resume.pdf";
+        a.download = "Resume_.pdf";
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
