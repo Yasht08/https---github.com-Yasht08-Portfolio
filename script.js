@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Handle resume download
-    const resumeButton = document.querySelector('.btn[href$="Resume"]');
+    const resumeButton = document.querySelector('.btn[href$="resume"]');
     resumeButton.addEventListener('click', function(event) {
         const resumePath = "Resume_.pdf";  // Update with the correct path
         const a = document.createElement('a');
